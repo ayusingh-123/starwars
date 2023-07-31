@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/dropmenu.css";
+import "../styles/dropmenu.css";
 import { AiOutlineEye, AiOutlineDownload } from "react-icons/ai";
 const Dropmenu = ({ toggle, action }) => {
   const dropdownItem = [
@@ -34,11 +34,11 @@ const Dropmenu = ({ toggle, action }) => {
   ];
   return (
     <div>
-      <div className={styles.option} onClick={action}>
+      <div className="option" onClick={action}>
         <ul>
           {dropdownItem.map((item, index) => {
             return (
-              <div className={styles.list}>
+              <div className="list">
                 <span>{item.icon}</span>
                 <li>{item.name}</li>
               </div>
