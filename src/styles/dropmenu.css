@@ -1,11 +1,10 @@
 .option{
     width: 12rem;
     position: absolute;
-    background-color: white;
+    background-color: rgb(163, 158, 158);
     padding: 0px;
     border: 1px solid #000;
     border-radius: 5px;
-    z-index: +1;
     
 }
 .active{
@@ -22,7 +21,7 @@
 
 .list{
     display: flex;
-    flex-direction: row;
+    justify-content: left;
     align-items: center;
     /* border: 1px solid red; */
     /* padding: 2px 5px; */
