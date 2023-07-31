@@ -86,9 +86,9 @@ function Filmgrid(props) {
                     <div className="opt">
                       <BsThreeDotsVertical onClick={() => handleDrop(index)} />
                     </div>
+                    {val === index && open && <Dropmenu />}
                   </div>
                 </div>
-                {val === index && open && <Dropmenu />}
               </div>
             ))}
           </div>
@@ -120,7 +120,7 @@ function Filmgrid(props) {
                     </div>
 
                     <div className="opt">
-                      <BsThreeDotsVertical />
+                      <BsThreeDotsVertical onClick={() => handleDrop(index)} />
                     </div>
                     {val === index && open && <Dropmenu />}
                   </div>
@@ -157,7 +157,7 @@ function Filmgrid(props) {
                     </div>
 
                     <div className="opt">
-                      <BsThreeDotsVertical onClick={() => handleDrop(index)}/>
+                      <BsThreeDotsVertical onClick={() => handleDrop(index)} />
                     </div>
                     {val === index && open && <Dropmenu />}
                   </div>
@@ -194,8 +194,9 @@ function Filmgrid(props) {
                     </div>
 
                     <div className="opt">
-                      <BsThreeDotsVertical />
+                      <BsThreeDotsVertical onClick={() => handleDrop(index)} />
                     </div>
+                    {val === index && open && <Dropmenu />}
                   </div>
                 </div>
               </div>
@@ -230,8 +231,9 @@ function Filmgrid(props) {
                     </div>
 
                     <div className="opt">
-                      <BsThreeDotsVertical />
+                      <BsThreeDotsVertical onClick={() => handleDrop(index)} />
                     </div>
+                    {val === index && open && <Dropmenu />}
                   </div>
                 </div>
               </div>
@@ -266,8 +268,9 @@ function Filmgrid(props) {
                     </div>
 
                     <div className="opt">
-                      <BsThreeDotsVertical />
+                      <BsThreeDotsVertical onClick={() => handleDrop(index)} />
                     </div>
+                    {val === index && open && <Dropmenu />}
                   </div>
                 </div>
               </div>
