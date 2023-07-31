@@ -1,0 +1,199 @@
+return (
+    <div>
+      {
+        props.value === "films" ? {
+          return (
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Director</th>
+                    <th>Release Date</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {films.map((item, index) => (
+                    <tr key={index} onClick={() => clickOnImage(item)}>
+                      <td style={{ display: "flex", justifyContent: "left" }}>
+                        <PiFilmReelLight size={18} /> &nbsp;
+                        {item.title}
+                      </td>
+                      <td>{item.director}</td>
+                      <td>{item.release_date}</td>
+                      <td>
+                        <BsThreeDotsVertical />
+                      </td>
+                      {send ? <Slidebar dong={[dong]} /> : ""}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+        if (props.value === "people") {
+          return (
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Birthdate</th>
+                    <th>Species</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {films.map((item, index) => (
+                    <tr key={index} onClick={() => clickOnImage(item)}>
+                      <td style={{ display: "flex", justifyContent: "left" }}>
+                        <PiFilmReelLight size={18} /> &nbsp;
+                        {item.name}
+                      </td>
+                      <td>{item.birth_year}</td>
+                      <td>{item.species}</td>
+                      <td>
+                        <BsThreeDotsVertical />
+                      </td>
+                      {send ? <Slidebar dong={[dong]} /> : ""}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+
+        if (props.value === "planets") {
+          return (
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Climate</th>
+                    <th>Gravity</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {films.map((item, index) => (
+                    <tr key={index} onClick={() => clickOnImage(item)}>
+                      <td style={{ display: "flex", justifyContent: "left" }}>
+                        <PiFilmReelLight size={18} /> &nbsp;
+                        {item.title}
+                      </td>
+                      <td>{item.director}</td>
+                      <td>{item.release_date}</td>
+                      <td>
+                        <BsThreeDotsVertical />
+                      </td>
+                      {send ? <Slidebar dong={[dong]} /> : ""}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+        if (props.value === "Species") {
+          return (
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Homeworld</th>
+                    <th>Lifespan</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {films.map((item, index) => (
+                    <tr key={index} onClick={() => clickOnImage(item)}>
+                      <td style={{ display: "flex", justifyContent: "left" }}>
+                        <PiFilmReelLight size={18} /> &nbsp;
+                        {item.title}
+                      </td>
+                      <td>{item.director}</td>
+                      <td>{item.release_date}</td>
+                      <td>
+                        <BsThreeDotsVertical />
+                      </td>
+                      {send ? <Slidebar dong={[dong]} /> : ""}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+        if (props.value === "Starships") {
+          return (
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Model</th>
+                    <th>Hyperdrive Rating</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {films.map((item, index) => (
+                    <tr key={index} onClick={() => clickOnImage(item)}>
+                      <td style={{ display: "flex", justifyContent: "left" }}>
+                        <PiFilmReelLight size={18} /> &nbsp;
+                        {item.title}
+                      </td>
+                      <td>{item.director}</td>
+                      <td>{item.release_date}</td>
+                      <td>
+                        <BsThreeDotsVertical />
+                      </td>
+                      {send ? <Slidebar dong={[dong]} /> : ""}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+        if (props.value === "Vehicles") {
+          return (
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Model</th>
+                    <th>TopSpeed</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {films.map((item, index) => (
+                    <tr key={index} onClick={() => clickOnImage(item)}>
+                      <td style={{ display: "flex", justifyContent: "left" }}>
+                        <PiFilmReelLight size={18} /> &nbsp;
+                        {item.title}
+                      </td>
+                      <td>{item.director}</td>
+                      <td>{item.release_date}</td>
+                      <td>
+                        <BsThreeDotsVertical />
+                      </td>
+                      {send ? <Slidebar dong={[dong]} /> : ""}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+      }
+    </div>
+  );

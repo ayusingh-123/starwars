@@ -1,0 +1,34 @@
+.resource-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #00214773; 
+    padding: 20px;
+    color: rgb(154, 147, 147);
+   
+  }
+  .t1{
+    border-bottom: 2px solid white;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  .t2{
+    padding: 10px;
+    font-size: 20px;
+  }
+ .tour{
+  margin: 10px;
+  margin-left: -2px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  max-height: max-content;
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
+ }
+  
