@@ -83,11 +83,11 @@ function Filmgrid(props) {
                     </div>
 
                     <div className="opt">
-                      <BsThreeDotsVertical onClick={() => handleDrop(index)} />
+                      <BsThreeDotsVertical />
                     </div>
                   </div>
                 </div>
-                {val === index && open && <Dropmenu />}
+    
               </div>
             ))}
           </div>
