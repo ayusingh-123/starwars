@@ -65,6 +65,7 @@ function Filmgrid(props) {
                 <div class="mdl-grid">
                   <div class="mdl-card__media">
                     <img
+                      onClick={() => clickOnImage(item)}
                       src="https://wallpapercave.com/wp/wp6886279.jpg"
                       alt=""
                     />
@@ -83,11 +84,11 @@ function Filmgrid(props) {
                     </div>
 
                     <div className="opt">
-                      <BsThreeDotsVertical />
+                      <BsThreeDotsVertical onClick={() => handleDrop(index)} />
                     </div>
                   </div>
                 </div>
-    
+                {val === index && open && <Dropmenu />}
               </div>
             ))}
           </div>
@@ -121,6 +122,7 @@ function Filmgrid(props) {
                     <div className="opt">
                       <BsThreeDotsVertical />
                     </div>
+                    {val === index && open && <Dropmenu />}
                   </div>
                 </div>
               </div>
@@ -155,8 +157,9 @@ function Filmgrid(props) {
                     </div>
 
                     <div className="opt">
-                      <BsThreeDotsVertical />
+                      <BsThreeDotsVertical onClick={() => handleDrop(index)}/>
                     </div>
+                    {val === index && open && <Dropmenu />}
                   </div>
                 </div>
               </div>
